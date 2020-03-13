@@ -226,7 +226,7 @@ class Dever1Controller extends Controller
         $idade = $request->idade;
 
         $anoDia = intdiv($idade, 365);
-        $mesDia = ($idade % 365) / 30;
+        $mesDia = ($idade % 365) /  30;
         $diaDia2 = ($idade % 365) % 30;
 
 
