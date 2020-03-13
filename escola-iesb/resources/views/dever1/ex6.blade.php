@@ -7,20 +7,26 @@
 </head>
 <body style="background-color:#636b6f;">
 <div class="container">
-<h1>Exercício 2</h1>
+<h1>Exercício 6</h1>
 <br>
 
-<form action="/ex2" method="post">
+<form action="/ex6" method="post">
     @csrf
 
-    Total de eleitores:
+    Comissão sobre total de vendas (%): 5 <br>
+
+    <br>Salário fixo (R$):
+    <input type="text" name="salario"/><br>
+
+    Número de carros vendidos:
+    <input type="text" name="carros"/><br>
+
+    Valor total das vendas (R$):
     <input type="text" name="total"/><br>
-    Votos brancos:
-    <input type="text" name="brancos"/><br>
-    Votos nulos:
-    <input type="text" name="nulos"/><br>
-    Votos válidos:
-    <input type="text" name="validos"/>
+
+    Comissão por vendas (%):
+    <input type="text" name="comissao"/><br>
+
 
     <br>
     <input type="submit" value="ENVIAR">

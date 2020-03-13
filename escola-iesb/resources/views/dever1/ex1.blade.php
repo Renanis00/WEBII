@@ -6,7 +6,7 @@
     <title>Dever 1</title>
 </head>
 
-<body>
+<body style="background-color:#636b6f;">
 
     <h1>Exercício 1</h1>
     <br>
@@ -25,7 +25,6 @@
         <br>
 
         <input type="submit" value="ENVIAR">
-
+    </form>
 </body>
-</form>
 </html>

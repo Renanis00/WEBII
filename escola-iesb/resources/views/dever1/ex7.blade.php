@@ -7,20 +7,21 @@
 </head>
 <body style="background-color:#636b6f;">
 <div class="container">
-<h1>Exercício 2</h1>
+<h1>Exercício 7</h1>
 <br>
 
-<form action="/ex2" method="post">
+<form action="/ex7" method="post">
     @csrf
 
-    Total de eleitores:
-    <input type="text" name="total"/><br>
-    Votos brancos:
-    <input type="text" name="brancos"/><br>
-    Votos nulos:
-    <input type="text" name="nulos"/><br>
-    Votos válidos:
-    <input type="text" name="validos"/>
+    Olá fulano! Informe as notas das provas 1 e 2 respectivamente: <br>
+
+    <br>Prova 1:
+    <input type="text" name="p1"/><br>
+
+    Prova 2:
+    <input type="text" name="p2"/><br>
+
+
 
     <br>
     <input type="submit" value="ENVIAR">

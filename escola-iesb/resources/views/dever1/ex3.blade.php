@@ -7,20 +7,16 @@
 </head>
 <body style="background-color:#636b6f;">
 <div class="container">
-<h1>Exercício 2</h1>
+<h1>Exercício 3</h1>
 <br>
 
-<form action="/ex2" method="post">
+<form action="/ex3" method="post">
     @csrf
 
-    Total de eleitores:
-    <input type="text" name="total"/><br>
-    Votos brancos:
-    <input type="text" name="brancos"/><br>
-    Votos nulos:
-    <input type="text" name="nulos"/><br>
-    Votos válidos:
-    <input type="text" name="validos"/>
+    Salario atual (R$):
+    <input type="text" name="salario"/><br>
+    Reajuste (%):
+    <input type="text" name="reajuste"/><br>
 
     <br>
     <input type="submit" value="ENVIAR">

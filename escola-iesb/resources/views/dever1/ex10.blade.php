@@ -7,20 +7,21 @@
 </head>
 <body style="background-color:#636b6f;">
 <div class="container">
-<h1>Exercício 2</h1>
+<h1>Exercício 10</h1>
 <br>
 
-<form action="/ex2" method="post">
+<form action="/ex10" method="post">
     @csrf
 
-    Total de eleitores:
-    <input type="text" name="total"/><br>
-    Votos brancos:
-    <input type="text" name="brancos"/><br>
-    Votos nulos:
-    <input type="text" name="nulos"/><br>
-    Votos válidos:
-    <input type="text" name="validos"/>
+    Olá fulano! Informe o estoque mínimo e máximo respectivamente: <br>
+
+    <br>Estoque mínimo
+    <input type="text" name="min"/><br>
+
+    Estoma máximo:
+    <input type="text" name="max"/><br>
+
+
 
     <br>
     <input type="submit" value="ENVIAR">

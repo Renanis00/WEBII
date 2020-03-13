@@ -7,20 +7,21 @@
 </head>
 <body style="background-color:#636b6f;">
 <div class="container">
-<h1>Exercício 2</h1>
+<h1>Exercício 17</h1>
 <br>
 
-<form action="/ex2" method="post">
+<form action="/ex17" method="post">
     @csrf
 
-    Total de eleitores:
-    <input type="text" name="total"/><br>
-    Votos brancos:
-    <input type="text" name="brancos"/><br>
-    Votos nulos:
-    <input type="text" name="nulos"/><br>
-    Votos válidos:
-    <input type="text" name="validos"/>
+    Olá fulano! Preencha os campos abaixo: <br>
+
+    <br>Nome do(a) piloto(a):
+    <input type="text" name="nome"/><br>
+    Distância percorrida (km)
+    <input type="text" name="distancia"/><br>
+    Tempo (Horas):
+    <input type="text" name="tempo"/><br>
+
 
     <br>
     <input type="submit" value="ENVIAR">

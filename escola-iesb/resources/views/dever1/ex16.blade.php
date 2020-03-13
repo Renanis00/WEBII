@@ -7,20 +7,23 @@
 </head>
 <body style="background-color:#636b6f;">
 <div class="container">
-<h1>Exercício 2</h1>
+<h1>Exercício 16</h1>
 <br>
 
-<form action="/ex2" method="post">
+<form action="/ex16" method="post">
     @csrf
 
-    Total de eleitores:
-    <input type="text" name="total"/><br>
-    Votos brancos:
-    <input type="text" name="brancos"/><br>
-    Votos nulos:
-    <input type="text" name="nulos"/><br>
-    Votos válidos:
-    <input type="text" name="validos"/>
+    Olá fulano! Preencha os campos abaixo: <br>
+
+    <br>Nome do(a) funcionário(a):
+    <input type="text" name="nome"/><br>
+    Salário fixo:
+    <input type="text" name="salario"/><br>
+    Total de vendas:
+    <input type="text" name="vendas"/><br>
+    Percentual sobre total de vendas:
+    <input type="text" name="percentual"/><br>
+
 
     <br>
     <input type="submit" value="ENVIAR">
