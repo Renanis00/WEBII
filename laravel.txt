@@ -1,3 +1,21 @@
 • composer create-project --prefer-dist laravel/laravel escola (GIT BASH)
 • php artisan serve (Terminal PS)
+• mysql = SELECT* FROM escola.migrations
+• composer dump-autoload
 
+
+
+Migrations = Insere estruturas no Banco
+--------------------------------------------------------------------------------
+• Migrations = php artisan make:migration create_table_curso ou nome da tabela
+• php artisan migrate = método up
+• php artisan migrate:rollback = método down (Última alteração)
+• php artisan migrate:fresh = apaga TODOS os dados da tabela.
+
+Seeders = insere dados ao banco
+----------------------------------------------------------------------------------
+php artisan make:seeder CursosSeeder
+php artisan db:seed
+php artisan migrate --seed = Executa todos migrations e seeders
+
+d

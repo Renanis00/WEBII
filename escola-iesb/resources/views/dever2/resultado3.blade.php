@@ -1,5 +1,8 @@
-<h1>Exercício 14</h1>
-<b>Sua média final é: {{$mediaFinal}} </b>
+<h1>Exercício 3</h1>
+
+<b>Números apresentados: {{implode(", ", $numeros)}}</b><br>
+<b>O maior número é: {{$numeroMax}} </b>
+
 
 
 

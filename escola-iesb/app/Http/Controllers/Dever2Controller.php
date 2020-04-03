@@ -4,32 +4,84 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Dever1Controller extends Controller
+class Dever2Controller extends Controller
 {
     public function ex1()
     {
-        return view('dever1.ex1');
+        return view('dever2.ex1');
     }
-
     public function resultado1(Request $request)
     {
-        $nota1 = $request->nota1;
-        $nota2 = $request->nota2;
-        $nota3 = $request->nota3;
-        $nota4 = $request->nota4;
+        $nome = $request->nome;
+        $salario = $request->salario;
 
-        $media = ($nota1 + $nota2 + $nota3 + $nota4) / 4;
-        $aluno = "Agaraga";
+        if($salario < 1000){
+            $reajusteTotal = 30 * $salario / 100;
+            $salarioReajustado = $reajusteTotal + $salario;
+            $salarioTotal = $salarioReajustado;
+            echo "<h1> Seu salário foi reajustado em 30%</h1> ";
 
-        return view('dever1.resultado1', compact('media', 'aluno'));
+
+        }else {
+            $salarioTotal = $salario;
+            $salarioReajustado = 0;
+            $reajusteTotal = 0;
+            echo "<h1>Reajuste não aprovado</h1>";
+        }
+
+        return view('dever2.resultado1', compact('reajusteTotal', 'salarioReajustado', 'salario', 'salarioTotal', 'nome'));
     }
 
     public function ex2()
     {
+        return view(    'dever2.ex2');
+    }
+    public function resultado2(Request $request)
+    {
+        $nome = $request->nome;
+        $salario = $request->salario;
+
+        if($salario <= 2000){
+            $reajusteTotal = 50 * $salario / 100;
+            $salarioReajustado = $reajusteTotal + $salario;
+            $salarioTotal = $salarioReajustado;
+            echo "<h1> Seu salário foi reajustado em 50%</h1> ";
+
+
+        }else {
+            $reajusteTotal = 30 * $salario / 100;
+            $salarioReajustado = $reajusteTotal + $salario;
+            $salarioTotal = $salarioReajustado;
+            ;
+            echo "<h1>Seu salário foi reajustado em 30%</h1>";
+        }
+
+        return view('dever2.resultado2', compact('reajusteTotal', 'salarioReajustado', 'salario', 'salarioTotal', 'nome'));
+    }
+
+    public function ex3()
+    {
+        return view('dever2.ex3');
+    }
+    public function resultado3(Request $request)
+    {
+        $n1 = $request->n1;
+        $n2 = $request->n2;
+        $n3 = $request->n3;
+
+        $numeros = array($n1, $n2, $n3);
+        $numeroMax = max($numeros);
+
+
+        return view('dever2.resultado3', compact('numeros', 'numeroMax'));
+    }
+
+    public function exx()
+    {
         return view('dever1.ex2');
     }
 
-    public function resultado2(Request $request)
+    public function resultadox(Request $request)
     {
         $total = $request->total;
         $brancos = $request->brancos;
@@ -47,12 +99,12 @@ class Dever1Controller extends Controller
         }
     }
 
-    public function ex3()
+    public function exxx()
     {
         return view('dever1.ex3');
     }
 
-    public function resultado3(Request $request)
+    public function resultadoxx(Request $request)
     {
         $salario = $request->salario;
         $reajuste = $request->reajuste;
@@ -237,7 +289,6 @@ class Dever1Controller extends Controller
     {
         return view('dever1.ex14');
     }
-
     public function resultado14(Request $request)
     {
         $nota1 = $request->p1;
@@ -253,7 +304,6 @@ class Dever1Controller extends Controller
     {
         return view('dever1.ex15');
     }
-
     public function resultado15(Request $request){
 
         $tempo = $request->tempo;
@@ -265,6 +315,7 @@ class Dever1Controller extends Controller
 
         return view('dever1.resultado15', compact('minutoTempo', 'horaTempo', 'segundosTempo'));
     }
+
     public function ex16()
     {
         return view('dever1.ex16');
@@ -287,7 +338,6 @@ class Dever1Controller extends Controller
     public function ex17(){
        return view('dever1.ex17');
     }
-
     public function resultado17(Request $request){
 
 

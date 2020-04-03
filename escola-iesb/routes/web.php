@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/*Dever 1*/
+
 Route::get('/curso', 'CursoController@index');
 
 Route::get('/ex1', 'Dever1Controller@ex1');
@@ -67,3 +69,14 @@ Route::post('/ex16', 'Dever1Controller@resultado16');
 
 Route::get('/ex17', 'Dever1Controller@ex17');
 Route::post('/ex17', 'Dever1Controller@resultado17');
+
+/*Dever 2*/
+
+Route::get('/ex1', 'Dever2Controller@ex1');
+Route::post('/ex1', 'Dever2Controller@resultado1');
+
+Route::get('/ex2', 'Dever2Controller@ex2');
+Route::post('/ex2', 'Dever2Controller@resultado2');
+
+Route::get('/ex3', 'Dever2Controller@ex3');
+Route::post('/ex3', 'Dever2Controller@resultado3');

@@ -7,10 +7,10 @@
 </head>
 <body style="background-color:#636b6f;">
 <div class="container">
-<h1>Exercício 1</h1>
+<h1>Exercício 2</h1>
 <br>
 
-<form action="/ex1" method="post">
+<form action="/ex2" method="post">
     @csrf
 
     Nome do(a) funcionário(a):
